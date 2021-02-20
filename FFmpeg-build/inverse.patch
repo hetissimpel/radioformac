@@ -1,0 +1,7 @@
+*** ffmpeg/libavcodec/inverse.c	Mon Oct 10 19:59:00 2011
+--- ffmpeg/libavcodec/inverse.c	Mon Oct 10 19:58:50 2011
+***************
+*** 1 ****
+! #include "libavutil/inverse.c"
+--- 1 ----
+! //#include "libavutil/inverse.c"

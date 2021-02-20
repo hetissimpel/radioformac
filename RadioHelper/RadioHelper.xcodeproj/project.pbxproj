@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DB9E45B15CDCAD300A7C594 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB9E45A15CDCAD300A7C594 /* Cocoa.framework */; };
+		3DB9E46715CDCAD300A7C594 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB9E46615CDCAD300A7C594 /* main.m */; };
+		3DB9E46E15CDCAD300A7C594 /* RadioAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB9E46D15CDCAD300A7C594 /* RadioAppDelegate.m */; };
+		3DB9E47115CDCAD300A7C594 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB9E46F15CDCAD300A7C594 /* MainMenu.xib */; };
+		3DE7AE8C1644FB2000364540 /* Radio.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 3DE7AE8B1644FB2000364540 /* Radio.iconset */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D3257BA1651263900C843AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3DB9E45615CDCAD300A7C594 /* RadioHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB9E45A15CDCAD300A7C594 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3DB9E45D15CDCAD300A7C594 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3DB9E45E15CDCAD300A7C594 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3DB9E45F15CDCAD300A7C594 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DB9E46215CDCAD300A7C594 /* RadioHelper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RadioHelper-Info.plist"; sourceTree = "<group>"; };
+		3DB9E46615CDCAD300A7C594 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DB9E46815CDCAD300A7C594 /* RadioHelper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RadioHelper-Prefix.pch"; sourceTree = "<group>"; };
+		3DB9E46C15CDCAD300A7C594 /* RadioAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadioAppDelegate.h; sourceTree = "<group>"; };
+		3DB9E46D15CDCAD300A7C594 /* RadioAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadioAppDelegate.m; sourceTree = "<group>"; };
+		3DB9E47715CDCB2A00A7C594 /* RadioHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RadioHelper.entitlements; sourceTree = "<group>"; };
+		3DE7AE8B1644FB2000364540 /* Radio.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Radio.iconset; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB9E45315CDCAD300A7C594 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB9E45B15CDCAD300A7C594 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DB9E44B15CDCAD300A7C594 = {
+			isa = PBXGroup;
+			children = (
+				3DE7AE8B1644FB2000364540 /* Radio.iconset */,
+				3DB9E46015CDCAD300A7C594 /* RadioHelper */,
+				3DB9E45915CDCAD300A7C594 /* Frameworks */,
+				3DB9E45715CDCAD300A7C594 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DB9E45715CDCAD300A7C594 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DB9E45615CDCAD300A7C594 /* RadioHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DB9E45915CDCAD300A7C594 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB9E45A15CDCAD300A7C594 /* Cocoa.framework */,
+				3DB9E45C15CDCAD300A7C594 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DB9E45C15CDCAD300A7C594 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB9E45D15CDCAD300A7C594 /* AppKit.framework */,
+				3DB9E45E15CDCAD300A7C594 /* CoreData.framework */,
+				3DB9E45F15CDCAD300A7C594 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3DB9E46015CDCAD300A7C594 /* RadioHelper */ = {
+			isa = PBXGroup;
+			children = (
+				3DB9E47715CDCB2A00A7C594 /* RadioHelper.entitlements */,
+				3DB9E46C15CDCAD300A7C594 /* RadioAppDelegate.h */,
+				3DB9E46D15CDCAD300A7C594 /* RadioAppDelegate.m */,
+				3DB9E46F15CDCAD300A7C594 /* MainMenu.xib */,
+				3DB9E46115CDCAD300A7C594 /* Supporting Files */,
+			);
+			path = RadioHelper;
+			sourceTree = "<group>";
+		};
+		3DB9E46115CDCAD300A7C594 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DB9E46215CDCAD300A7C594 /* RadioHelper-Info.plist */,
+				3DB9E46615CDCAD300A7C594 /* main.m */,
+				3DB9E46815CDCAD300A7C594 /* RadioHelper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DB9E45515CDCAD300A7C594 /* RadioHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB9E47415CDCAD300A7C594 /* Build configuration list for PBXNativeTarget "RadioHelper" */;
+			buildPhases = (
+				3DB9E45215CDCAD300A7C594 /* Sources */,
+				3DB9E45315CDCAD300A7C594 /* Frameworks */,
+				3DB9E45415CDCAD300A7C594 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadioHelper;
+			productName = RadioHelper;
+			productReference = 3DB9E45615CDCAD300A7C594 /* RadioHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DB9E44D15CDCAD300A7C594 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Radio;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Het is Simpel";
+				TargetAttributes = {
+					3DB9E45515CDCAD300A7C594 = {
+						DevelopmentTeam = 82J68954P8;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 3DB9E45015CDCAD300A7C594 /* Build configuration list for PBXProject "RadioHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DB9E44B15CDCAD300A7C594;
+			productRefGroup = 3DB9E45715CDCAD300A7C594 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DB9E45515CDCAD300A7C594 /* RadioHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DB9E45415CDCAD300A7C594 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB9E47115CDCAD300A7C594 /* MainMenu.xib in Resources */,
+				3DE7AE8C1644FB2000364540 /* Radio.iconset in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DB9E45215CDCAD300A7C594 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB9E46715CDCAD300A7C594 /* main.m in Sources */,
+				3DB9E46E15CDCAD300A7C594 /* RadioAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DB9E46F15CDCAD300A7C594 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3257BA1651263900C843AC /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DB9E47215CDCAD300A7C594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		3DB9E47315CDCAD300A7C594 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		3DB9E47515CDCAD300A7C594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RadioHelper/RadioHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadioHelper/RadioHelper-Prefix.pch";
+				INFOPLIST_FILE = "RadioHelper/RadioHelper-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "19e42f3d-edd2-412e-9121-269f3ab59d1f";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3DB9E47615CDCAD300A7C594 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RadioHelper/RadioHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RadioHelper/RadioHelper-Prefix.pch";
+				INFOPLIST_FILE = "RadioHelper/RadioHelper-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "19e42f3d-edd2-412e-9121-269f3ab59d1f";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB9E45015CDCAD300A7C594 /* Build configuration list for PBXProject "RadioHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB9E47215CDCAD300A7C594 /* Debug */,
+				3DB9E47315CDCAD300A7C594 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB9E47415CDCAD300A7C594 /* Build configuration list for PBXNativeTarget "RadioHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB9E47515CDCAD300A7C594 /* Debug */,
+				3DB9E47615CDCAD300A7C594 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DB9E44D15CDCAD300A7C594 /* Project object */;
+}

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RadioPrefsStationsViewController">
+            <connections>
+                <outlet property="channelsArrayController" destination="27" id="87"/>
+                <outlet property="channelsTableView" destination="3" id="86"/>
+                <outlet property="deleteButton" destination="150" id="154"/>
+                <outlet property="editButton" destination="177" id="194"/>
+                <outlet property="favButton" destination="88" id="d5y-aT-mxU"/>
+                <outlet property="playButton" destination="121" id="140"/>
+                <outlet property="searchField" destination="112" id="119"/>
+                <outlet property="view" destination="1" id="22"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="1">
+            <rect key="frame" x="0.0" y="0.0" width="630" height="465"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2">
+                    <rect key="frame" x="20" y="66" width="590" height="349"/>
+                    <clipView key="contentView" id="qFk-sX-yHR">
+                        <rect key="frame" x="1" y="0.0" width="588" height="348"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveName="stationsTable" headerView="141" id="3" customClass="RadioStationTableView">
+                                <rect key="frame" x="0.0" y="0.0" width="588" height="325"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <size key="intercellSpacing" width="3" height="2"/>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <tableColumns>
+                                    <tableColumn identifier="PrefsStationsImage" editable="NO" width="40" minWidth="40" maxWidth="40" id="99" userLabel="Table Column - Image">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableHeaderCell>
+                                        <imageCell key="dataCell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="controls_fav_inactive" id="101">
+                                            <font key="font" metaFont="system"/>
+                                        </imageCell>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                    </tableColumn>
+                                    <tableColumn identifier="PrefsStationsName" editable="NO" width="201.90625" minWidth="40" maxWidth="1000" id="7">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Name">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="10">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <connections>
+                                                <binding destination="27" name="value" keyPath="arrangedObjects.name" id="33"/>
+                                            </connections>
+                                        </textFieldCell>
+                                        <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="name"/>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <connections>
+                                            <binding destination="27" name="value" keyPath="arrangedObjects.name" id="110"/>
+                                        </connections>
+                                    </tableColumn>
+                                    <tableColumn identifier="PrefsStationsDescription" editable="NO" width="99" minWidth="40" maxWidth="1000" id="8">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Description">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="9">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <connections>
+                                                <binding destination="27" name="value" keyPath="arrangedObjects.desc" id="36"/>
+                                            </connections>
+                                        </textFieldCell>
+                                        <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="description"/>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <connections>
+                                            <binding destination="27" name="value" keyPath="arrangedObjects.desc" id="71"/>
+                                        </connections>
+                                    </tableColumn>
+                                    <tableColumn identifier="PrefsStationsCity" editable="NO" width="107" minWidth="40" maxWidth="1000" id="160">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="City">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="161">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <connections>
+                                                <binding destination="27" name="value" keyPath="arrangedObjects.city" id="167"/>
+                                            </connections>
+                                        </textFieldCell>
+                                        <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="city"/>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <connections>
+                                            <binding destination="27" name="value" keyPath="arrangedObjects.city" id="176">
+                                                <dictionary key="options">
+                                                    <bool key="NSConditionallySetsEditable" value="YES"/>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
+                                    </tableColumn>
+                                    <tableColumn identifier="PrefsStationsCountry" editable="NO" width="125" minWidth="40" maxWidth="1000" id="170">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Country">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="171">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <connections>
+                                                <binding destination="27" name="value" keyPath="arrangedObjects.city" id="172"/>
+                                            </connections>
+                                        </textFieldCell>
+                                        <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="country"/>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <connections>
+                                            <binding destination="27" name="value" keyPath="arrangedObjects.country" id="174">
+                                                <dictionary key="options">
+                                                    <bool key="NSConditionallySetsEditable" value="YES"/>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
+                                    </tableColumn>
+                                </tableColumns>
+                                <connections>
+                                    <binding destination="-2" name="doubleClickTarget" keyPath="self" id="144">
+                                        <dictionary key="options">
+                                            <string key="NSSelectorName">doubleClickOnStationRow:</string>
+                                        </dictionary>
+                                    </binding>
+                                    <outlet property="dataSource" destination="-2" id="108"/>
+                                    <outlet property="delegate" destination="-2" id="85"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="4">
+                        <rect key="frame" x="-100" y="-100" width="588" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="6">
+                        <rect key="frame" x="224" y="17" width="15" height="102"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <tableHeaderView key="headerView" id="141">
+                        <rect key="frame" x="0.0" y="0.0" width="588" height="23"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tableHeaderView>
+                </scrollView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="88">
+                    <rect key="frame" x="246" y="13" width="144" height="32"/>
+                    <buttonCell key="cell" type="push" title="Add to favourites" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="89">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="addToFavsButtonPressed:" target="-2" id="98"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="121">
+                    <rect key="frame" x="14" y="13" width="66" height="32"/>
+                    <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="122">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="playButtonPressed:" target="-2" id="139"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="177">
+                    <rect key="frame" x="80" y="13" width="75" height="32"/>
+                    <buttonCell key="cell" type="push" title="Edit..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="178">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="editButtonPressed:" target="-2" id="191"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="130">
+                    <rect key="frame" x="463" y="13" width="153" height="32"/>
+                    <buttonCell key="cell" type="push" title="Add New Station..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="131">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="addNewStationButtonPressed:" target="-2" id="138"/>
+                    </connections>
+                </button>
+                <searchField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="112">
+                    <rect key="frame" x="20" y="423" width="590" height="22"/>
+                    <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="113">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </searchFieldCell>
+                    <connections>
+                        <action selector="updateFilterAction:" target="-2" id="217"/>
+                    </connections>
+                </searchField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="149">
+                    <rect key="frame" x="155" y="13" width="91" height="32"/>
+                    <buttonCell key="cell" type="push" title="Delete..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="150">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <connections>
+                            <action selector="deleteButtonPressed:" target="-2" id="153"/>
+                        </connections>
+                    </buttonCell>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="2" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="15"/>
+                <constraint firstAttribute="trailing" secondItem="2" secondAttribute="trailing" constant="20" symbolic="YES" id="20"/>
+                <constraint firstItem="112" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" symbolic="YES" id="115"/>
+                <constraint firstItem="112" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="116"/>
+                <constraint firstItem="2" firstAttribute="top" secondItem="112" secondAttribute="bottom" constant="8" symbolic="YES" id="117"/>
+                <constraint firstAttribute="trailing" secondItem="112" secondAttribute="trailing" constant="20" symbolic="YES" id="118"/>
+                <constraint firstItem="121" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="128"/>
+                <constraint firstAttribute="bottom" secondItem="88" secondAttribute="bottom" constant="20" symbolic="YES" id="145"/>
+                <constraint firstAttribute="bottom" secondItem="130" secondAttribute="bottom" constant="20" symbolic="YES" id="146"/>
+                <constraint firstAttribute="bottom" secondItem="121" secondAttribute="bottom" constant="20" symbolic="YES" id="147"/>
+                <constraint firstAttribute="bottom" secondItem="2" secondAttribute="bottom" constant="66" id="148"/>
+                <constraint firstAttribute="bottom" secondItem="149" secondAttribute="bottom" constant="20" symbolic="YES" id="151"/>
+                <constraint firstAttribute="trailing" secondItem="130" secondAttribute="trailing" constant="20" symbolic="YES" id="159"/>
+                <constraint firstAttribute="bottom" secondItem="177" secondAttribute="bottom" constant="20" symbolic="YES" id="185"/>
+                <constraint firstItem="177" firstAttribute="leading" secondItem="121" secondAttribute="trailing" constant="12" symbolic="YES" id="186"/>
+                <constraint firstItem="149" firstAttribute="leading" secondItem="177" secondAttribute="trailing" constant="12" symbolic="YES" id="192"/>
+                <constraint firstItem="88" firstAttribute="leading" secondItem="149" secondAttribute="trailing" constant="12" symbolic="YES" id="193"/>
+            </constraints>
+        </customView>
+        <arrayController mode="entity" entityName="Channel" usesLazyFetching="YES" editable="NO" automaticallyPreparesContent="YES" automaticallyRearrangesObjects="YES" id="27">
+            <connections>
+                <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="84"/>
+                <binding destination="203" name="sortDescriptors" keyPath="values.sortDescriptors" id="212">
+                    <dictionary key="options">
+                        <bool key="NSValidatesImmediately" value="YES"/>
+                        <string key="NSValueTransformerName">NSUnarchiveFromData</string>
+                    </dictionary>
+                </binding>
+            </connections>
+        </arrayController>
+        <userDefaultsController id="203"/>
+    </objects>
+    <resources>
+        <image name="controls_fav_inactive" width="22" height="22"/>
+    </resources>
+</document>
