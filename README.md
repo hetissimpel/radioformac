@@ -21,11 +21,18 @@ The purpose of this code is to wrap the FFMpeg open source library and present i
 
 The original library was for iOS and he version presented here and embedded in the app has been changed to target the slightly different macOS audio subsystem requirements.
 
-This was created by a no defunct company called Yakamoz Labs and its author ![Kemal Taskin](https://github.com/kemaltaskin) has kindly approved the release of this library as part of the overall app.
+This was created by a no defunct company called Yakamoz Labs and its author [Kemal Taskin](https://github.com/kemaltaskin) has kindly approved the release of this library as part of the overall app.
 
 # FFmpeg
 
 This application relies on FFmpeg library and build scripts are included.
+
+# Contributors
+
+*Development:* [Damien Glancy](https://github.com/dglancy)
+*Design/UI:* [Jeroen Hermkens](https://github.com/JeroenHermkens)
+*Website:* [Remco Kalf](https://github.com/remcokalf)
+*RadioTunes SDK:* [Kemal Taskin](https://github.com/kemaltaskin)
 
 # License
 
