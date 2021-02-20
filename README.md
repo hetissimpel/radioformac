@@ -27,6 +27,13 @@ This was created by a no defunct company called Yakamoz Labs and its author [Kem
 
 This application relies on FFmpeg library and build scripts are included.
 
+# Contributors
+
+*Development:* [Damien Glancy](https://github.com/dglancy)
+*Design/UI:* [Jeroen Hermkens](https://github.com/JeroenHermkens)
+*Website:* [Remco Kalf](https://github.com/remcokalf)
+*RadioTunes SDK:* [Kemal Taskin](https://github.com/kemaltaskin)
+
 # License
 
 This code is released under the MIT License. See LICENSE file for more details. 
