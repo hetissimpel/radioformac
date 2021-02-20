@@ -1,0 +1,1386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D014CEE184E4B630015C847 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D014CED184E4B630015C847 /* Images.xcassets */; };
+		3D0A861015D6DDF5005203BE /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0A860F15D6DDF5005203BE /* QTKit.framework */; };
+		3D11B72B1646AA0800229E6E /* RadioFavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D11B72D1646AA0800229E6E /* RadioFavouritesViewController.xib */; };
+		3D11B72E1646AA1600229E6E /* RadioPrefsRecordingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D11B7301646AA1600229E6E /* RadioPrefsRecordingViewController.xib */; };
+		3D11B7311646AA2400229E6E /* RHPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D11B7331646AA2400229E6E /* RHPreferencesWindow.xib */; };
+		3D11B7341646AA2900229E6E /* RadioPrefsFavsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D11B7361646AA2900229E6E /* RadioPrefsFavsViewController.xib */; };
+		3D11B7371646AA2E00229E6E /* RadioPrefsStationDetailSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D11B7391646AA2E00229E6E /* RadioPrefsStationDetailSheet.xib */; };
+		3D11B73A1646AA3400229E6E /* RadioPrefsStationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D11B73C1646AA3400229E6E /* RadioPrefsStationsViewController.xib */; };
+		3D11B73D1646AA6400229E6E /* RadioPrefsGeneralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D11B73F1646AA6400229E6E /* RadioPrefsGeneralViewController.xib */; };
+		3D1213DA15E1998D00328A14 /* RadioFavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1213D915E1998D00328A14 /* RadioFavouritesViewController.m */; };
+		3D13D4F315DE1C78002A31BE /* RadioControlButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D13D4F215DE1C78002A31BE /* RadioControlButton.m */; };
+		3D1701E119D6C99A0022FA0C /* GCDMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701C119D6C99A0022FA0C /* GCDMulticastDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D1701E219D6C99A0022FA0C /* NSHTTPURLResponse+RadioTunes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701C319D6C99A0022FA0C /* NSHTTPURLResponse+RadioTunes.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D1701E319D6C99A0022FA0C /* YLASXParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701C719D6C99A0022FA0C /* YLASXParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D1701E419D6C99A0022FA0C /* YLAudioConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701C919D6C99A0022FA0C /* YLAudioConverter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D1701E519D6C99A0022FA0C /* YLAudioPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701CB19D6C99A0022FA0C /* YLAudioPacket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D1701E619D6C99A0022FA0C /* YLAudioQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701CD19D6C99A0022FA0C /* YLAudioQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D1701E819D6C99A0022FA0C /* YLHTTPRadio.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701D119D6C99A0022FA0C /* YLHTTPRadio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D1701E919D6C99A0022FA0C /* YLM3UParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701D319D6C99A0022FA0C /* YLM3UParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D1701EA19D6C99A0022FA0C /* YLMMSRadio.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701D519D6C99A0022FA0C /* YLMMSRadio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D1701EB19D6C99A0022FA0C /* YLPLSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701D819D6C99A0022FA0C /* YLPLSParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D1701EC19D6C99A0022FA0C /* YLRadio.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701DA19D6C99A0022FA0C /* YLRadio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D1701ED19D6C99A0022FA0C /* YLReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701DC19D6C99A0022FA0C /* YLReachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D1701EE19D6C99A0022FA0C /* YLXMLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701DE19D6C99A0022FA0C /* YLXMLUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D1701EF19D6C99A0022FA0C /* YLXSPFParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1701E019D6C99A0022FA0C /* YLXSPFParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D251383163422D200356CB0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D251382163422D200356CB0 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		3D2513C81634275D00356CB0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2513C71634275D00356CB0 /* SystemConfiguration.framework */; };
+		3D25141F1635255E00356CB0 /* RadioFavouritesControlButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D25141E1635255E00356CB0 /* RadioFavouritesControlButton.m */; };
+		3D2CC24D17B65009005B4EA0 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2CC24C17B65009005B4EA0 /* libiconv.dylib */; };
+		3D3605D015DFB02000778048 /* RadioVolumeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3605CF15DFB02000778048 /* RadioVolumeSlider.m */; };
+		3D360B0F164E9BB30057AE7F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D360B0E164E9BB30057AE7F /* QuartzCore.framework */; };
+		3D36DD8215CEB4850099175A /* RadioHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D85BADE15CE693E00D093E8 /* RadioHelper.app */; };
+		3D38647316517015008280A9 /* RadioCrowdSourcingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1F4756477A82548CF2A00 /* RadioCrowdSourcingManager.m */; };
+		3D3C0E8815C9ADBF001F023D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3C0E8715C9ADBF001F023D /* Cocoa.framework */; };
+		3D3C0E9415C9ADBF001F023D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C0E9315C9ADBF001F023D /* main.m */; };
+		3D3C0E9B15C9ADBF001F023D /* RadioAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3C0E9A15C9ADBF001F023D /* RadioAppDelegate.m */; };
+		3D3F33EE15D00ADB00221952 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3F33ED15D00ADB00221952 /* libz.dylib */; };
+		3D3F33F015D00AED00221952 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3F33EF15D00AED00221952 /* libbz2.dylib */; };
+		3D3F33F215D00AF500221952 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3F33F115D00AF500221952 /* libxml2.dylib */; };
+		3D4A58DB177592F100F335CA /* Radio.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A58DA177592F100F335CA /* Radio.sdef */; };
+		3D4A58DE1775977100F335CA /* RadioScriptPlayCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A58DD1775977100F335CA /* RadioScriptPlayCommand.m */; };
+		3D4A58E51775D9BD00F335CA /* RadioScriptNextCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A58E41775D9BD00F335CA /* RadioScriptNextCommand.m */; };
+		3D4B3A671647B769002117E4 /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B3A661647B769002117E4 /* Recording.m */; };
+		3D4B3AE4164847C4002117E4 /* RadioApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B3AE3164847C4002117E4 /* RadioApplication.m */; };
+		3D5EDCE7166D1FC4007E8A02 /* RadioStationTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EDCE6166D1FC4007E8A02 /* RadioStationTableView.m */; };
+		3D5FCC1115D98D9C003ED27F /* RadioDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5FCC1015D98D9C003ED27F /* RadioDisplayViewController.m */; };
+		3D5FCC1415D98E83003ED27F /* RadioDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5FCC1315D98E83003ED27F /* RadioDisplayView.m */; };
+		3D6F5E581646C50F001F2D51 /* NSString+RadioExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6F5E571646C50F001F2D51 /* NSString+RadioExtensions.m */; };
+		3D75D57A15CDC2D3008F9604 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D75D57815CDC2D3008F9604 /* MainMenu.xib */; };
+		3D75D58015CDC791008F9604 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D75D57F15CDC791008F9604 /* ServiceManagement.framework */; };
+		3D8D8DF91775E51A008CC428 /* RadioScriptPreviousCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D8DF81775E51A008CC428 /* RadioScriptPreviousCommand.m */; };
+		3D950A5D15CE861500E2773B /* Radio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D950A5815CE861500E2773B /* Radio.xcdatamodeld */; };
+		3D9BD6E415CFB1D60031C5D5 /* RadioPrefsRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BD6E215CFB1D60031C5D5 /* RadioPrefsRecordingViewController.m */; };
+		3D9BFEA41645A2AF00E94432 /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BFEA31645A2AF00E94432 /* Channel.m */; };
+		3DA22419163EB92300D443A6 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA22418163EB92300D443A6 /* libswresample.a */; };
+		3DA22421163EBC4D00D443A6 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA2241D163EBC4D00D443A6 /* libavcodec.a */; };
+		3DA22422163EBC4D00D443A6 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA2241E163EBC4D00D443A6 /* libavformat.a */; };
+		3DA22423163EBC4D00D443A6 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA2241F163EBC4D00D443A6 /* libavutil.a */; };
+		3DA22449163EBF8D00D443A6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA22448163EBF8D00D443A6 /* CoreVideo.framework */; };
+		3DA2244B163EBFB400D443A6 /* VideoDecodeAcceleration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA2244A163EBFB400D443A6 /* VideoDecodeAcceleration.framework */; };
+		3DB3C76E17529C370081E3CA /* radio.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3DB3C76D17529C370081E3CA /* radio.sqlite */; };
+		3DB644CA15CD936200BB36F6 /* RadioUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB644C915CD936200BB36F6 /* RadioUtils.m */; };
+		3DB644E415CDA77E00BB36F6 /* RHPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB644D315CDA56000BB36F6 /* RHPreferencesWindowController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
+		3DB644E815CDA80F00BB36F6 /* RadioPrefsGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB644E615CDA80F00BB36F6 /* RadioPrefsGeneralViewController.m */; };
+		3DB644EE15CDAA8C00BB36F6 /* RadioPrefsStationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB644EC15CDAA8C00BB36F6 /* RadioPrefsStationsViewController.m */; };
+		3DC5FEB117EA0C95005515AA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC5FE9C17EA0BC0005515AA /* XCTest.framework */; };
+		3DDA5CC915CDF37A004B0697 /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA5CC815CDF37A004B0697 /* StartAtLoginController.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		3DE3986E15E01B9300AA2861 /* RadioPrefsFavsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3986C15E01B9300AA2861 /* RadioPrefsFavsViewController.m */; };
+		3DE7AE8A1644FACF00364540 /* Radio.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 3DE7AE891644FACF00364540 /* Radio.iconset */; };
+		3DF50C4515C9BBC5003D519C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF50C4415C9BBC5003D519C /* AudioToolbox.framework */; };
+		3DF7609F1750E4FB008C1EF8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF7609E1750E4FB008C1EF8 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		5FD1FA59156E79C5B5592885 /* RadioCloudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1F6EFE3955B36E9B32ADD /* RadioCloudManager.m */; };
+		5FD1FD58F615CE87DC1CC722 /* RadioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1FFB36F002D3D6DA24807 /* RadioController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D36DD8015CEB4750099175A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D85BAD515CE693E00D093E8 /* RadioHelper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DB9E45515CDCAD300A7C594;
+			remoteInfo = RadioHelper;
+		};
+		3D85BADD15CE693E00D093E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D85BAD515CE693E00D093E8 /* RadioHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3DB9E45615CDCAD300A7C594;
+			remoteInfo = RadioHelper;
+		};
+		3DC5FEBB17EA0C95005515AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D3C0E7A15C9ADBF001F023D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D3C0E8215C9ADBF001F023D;
+			remoteInfo = Radio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DB9E47815CDCB9500A7C594 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				3D36DD8215CEB4850099175A /* RadioHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D014CED184E4B630015C847 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D0A860F15D6DDF5005203BE /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		3D1213D815E1998D00328A14 /* RadioFavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioFavouritesViewController.h; sourceTree = "<group>"; };
+		3D1213D915E1998D00328A14 /* RadioFavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioFavouritesViewController.m; sourceTree = "<group>"; };
+		3D13D4F115DE1C78002A31BE /* RadioControlButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioControlButton.h; sourceTree = "<group>"; };
+		3D13D4F215DE1C78002A31BE /* RadioControlButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioControlButton.m; sourceTree = "<group>"; };
+		3D1701C019D6C99A0022FA0C /* GCDMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDMulticastDelegate.h; sourceTree = "<group>"; };
+		3D1701C119D6C99A0022FA0C /* GCDMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDMulticastDelegate.m; sourceTree = "<group>"; };
+		3D1701C219D6C99A0022FA0C /* NSHTTPURLResponse+RadioTunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPURLResponse+RadioTunes.h"; sourceTree = "<group>"; };
+		3D1701C319D6C99A0022FA0C /* NSHTTPURLResponse+RadioTunes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPURLResponse+RadioTunes.m"; sourceTree = "<group>"; };
+		3D1701C419D6C99A0022FA0C /* RadioTunes-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RadioTunes-Prefix.pch"; sourceTree = "<group>"; };
+		3D1701C519D6C99A0022FA0C /* RadioTunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioTunes.h; sourceTree = "<group>"; };
+		3D1701C619D6C99A0022FA0C /* YLASXParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLASXParser.h; sourceTree = "<group>"; };
+		3D1701C719D6C99A0022FA0C /* YLASXParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLASXParser.m; sourceTree = "<group>"; };
+		3D1701C819D6C99A0022FA0C /* YLAudioConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAudioConverter.h; sourceTree = "<group>"; };
+		3D1701C919D6C99A0022FA0C /* YLAudioConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAudioConverter.m; sourceTree = "<group>"; };
+		3D1701CA19D6C99A0022FA0C /* YLAudioPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAudioPacket.h; sourceTree = "<group>"; };
+		3D1701CB19D6C99A0022FA0C /* YLAudioPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAudioPacket.m; sourceTree = "<group>"; };
+		3D1701CC19D6C99A0022FA0C /* YLAudioQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAudioQueue.h; sourceTree = "<group>"; };
+		3D1701CD19D6C99A0022FA0C /* YLAudioQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAudioQueue.m; sourceTree = "<group>"; };
+		3D1701D019D6C99A0022FA0C /* YLHTTPRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLHTTPRadio.h; sourceTree = "<group>"; };
+		3D1701D119D6C99A0022FA0C /* YLHTTPRadio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLHTTPRadio.m; sourceTree = "<group>"; };
+		3D1701D219D6C99A0022FA0C /* YLM3UParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLM3UParser.h; sourceTree = "<group>"; };
+		3D1701D319D6C99A0022FA0C /* YLM3UParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLM3UParser.m; sourceTree = "<group>"; };
+		3D1701D419D6C99A0022FA0C /* YLMMSRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMMSRadio.h; sourceTree = "<group>"; };
+		3D1701D519D6C99A0022FA0C /* YLMMSRadio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMMSRadio.m; sourceTree = "<group>"; };
+		3D1701D619D6C99A0022FA0C /* YLPlaylistParserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPlaylistParserProtocol.h; sourceTree = "<group>"; };
+		3D1701D719D6C99A0022FA0C /* YLPLSParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPLSParser.h; sourceTree = "<group>"; };
+		3D1701D819D6C99A0022FA0C /* YLPLSParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPLSParser.m; sourceTree = "<group>"; };
+		3D1701D919D6C99A0022FA0C /* YLRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRadio.h; sourceTree = "<group>"; };
+		3D1701DA19D6C99A0022FA0C /* YLRadio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLRadio.m; sourceTree = "<group>"; };
+		3D1701DB19D6C99A0022FA0C /* YLReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLReachability.h; sourceTree = "<group>"; };
+		3D1701DC19D6C99A0022FA0C /* YLReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLReachability.m; sourceTree = "<group>"; };
+		3D1701DD19D6C99A0022FA0C /* YLXMLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLXMLUtilities.h; sourceTree = "<group>"; };
+		3D1701DE19D6C99A0022FA0C /* YLXMLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLXMLUtilities.m; sourceTree = "<group>"; };
+		3D1701DF19D6C99A0022FA0C /* YLXSPFParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLXSPFParser.h; sourceTree = "<group>"; };
+		3D1701E019D6C99A0022FA0C /* YLXSPFParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLXSPFParser.m; sourceTree = "<group>"; };
+		3D251381163422D200356CB0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3D251382163422D200356CB0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3D25138A163423D100356CB0 /* avcodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avcodec.h; sourceTree = "<group>"; };
+		3D25138B163423D100356CB0 /* avfft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avfft.h; sourceTree = "<group>"; };
+		3D25138C163423D100356CB0 /* dxva2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dxva2.h; sourceTree = "<group>"; };
+		3D25138D163423D100356CB0 /* vaapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vaapi.h; sourceTree = "<group>"; };
+		3D25138E163423D100356CB0 /* vda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vda.h; sourceTree = "<group>"; };
+		3D25138F163423D100356CB0 /* vdpau.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vdpau.h; sourceTree = "<group>"; };
+		3D251390163423D100356CB0 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		3D251391163423D100356CB0 /* xvmc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xvmc.h; sourceTree = "<group>"; };
+		3D251393163423D100356CB0 /* avformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avformat.h; sourceTree = "<group>"; };
+		3D251394163423D100356CB0 /* avio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avio.h; sourceTree = "<group>"; };
+		3D251395163423D100356CB0 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		3D251397163423D100356CB0 /* adler32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adler32.h; sourceTree = "<group>"; };
+		3D251398163423D100356CB0 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		3D251399163423D100356CB0 /* attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attributes.h; sourceTree = "<group>"; };
+		3D25139A163423D100356CB0 /* audio_fifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio_fifo.h; sourceTree = "<group>"; };
+		3D25139B163423D100356CB0 /* audioconvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audioconvert.h; sourceTree = "<group>"; };
+		3D25139C163423D100356CB0 /* avassert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avassert.h; sourceTree = "<group>"; };
+		3D25139D163423D100356CB0 /* avconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avconfig.h; sourceTree = "<group>"; };
+		3D25139E163423D100356CB0 /* avstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avstring.h; sourceTree = "<group>"; };
+		3D25139F163423D100356CB0 /* avutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avutil.h; sourceTree = "<group>"; };
+		3D2513A0163423D100356CB0 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		3D2513A1163423D100356CB0 /* bprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bprint.h; sourceTree = "<group>"; };
+		3D2513A2163423D100356CB0 /* bswap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bswap.h; sourceTree = "<group>"; };
+		3D2513A3163423D100356CB0 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		3D2513A4163423D100356CB0 /* cpu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu.h; sourceTree = "<group>"; };
+		3D2513A5163423D100356CB0 /* crc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc.h; sourceTree = "<group>"; };
+		3D2513A6163423D100356CB0 /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict.h; sourceTree = "<group>"; };
+		3D2513A7163423D100356CB0 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		3D2513A8163423D100356CB0 /* eval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eval.h; sourceTree = "<group>"; };
+		3D2513A9163423D100356CB0 /* fifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fifo.h; sourceTree = "<group>"; };
+		3D2513AA163423D100356CB0 /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
+		3D2513AB163423D100356CB0 /* imgutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgutils.h; sourceTree = "<group>"; };
+		3D2513AC163423D100356CB0 /* intfloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intfloat.h; sourceTree = "<group>"; };
+		3D2513AD163423D100356CB0 /* intfloat_readwrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intfloat_readwrite.h; sourceTree = "<group>"; };
+		3D2513AE163423D100356CB0 /* intreadwrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intreadwrite.h; sourceTree = "<group>"; };
+		3D2513AF163423D100356CB0 /* lfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lfg.h; sourceTree = "<group>"; };
+		3D2513B0163423D100356CB0 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		3D2513B1163423D100356CB0 /* lzo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzo.h; sourceTree = "<group>"; };
+		3D2513B2163423D100356CB0 /* mathematics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathematics.h; sourceTree = "<group>"; };
+		3D2513B3163423D100356CB0 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		3D2513B4163423D100356CB0 /* mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mem.h; sourceTree = "<group>"; };
+		3D2513B5163423D100356CB0 /* opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opt.h; sourceTree = "<group>"; };
+		3D2513B6163423D100356CB0 /* parseutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parseutils.h; sourceTree = "<group>"; };
+		3D2513B7163423D100356CB0 /* pixdesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixdesc.h; sourceTree = "<group>"; };
+		3D2513B8163423D100356CB0 /* pixfmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixfmt.h; sourceTree = "<group>"; };
+		3D2513B9163423D100356CB0 /* random_seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random_seed.h; sourceTree = "<group>"; };
+		3D2513BA163423D100356CB0 /* rational.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rational.h; sourceTree = "<group>"; };
+		3D2513BB163423D100356CB0 /* samplefmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = samplefmt.h; sourceTree = "<group>"; };
+		3D2513BC163423D100356CB0 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		3D2513BD163423D100356CB0 /* timecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timecode.h; sourceTree = "<group>"; };
+		3D2513BE163423D100356CB0 /* timestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timestamp.h; sourceTree = "<group>"; };
+		3D2513C0163423D100356CB0 /* swresample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swresample.h; sourceTree = "<group>"; };
+		3D2513C71634275D00356CB0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3D2513C91634276E00356CB0 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		3D25141D1635255D00356CB0 /* RadioFavouritesControlButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioFavouritesControlButton.h; sourceTree = "<group>"; };
+		3D25141E1635255E00356CB0 /* RadioFavouritesControlButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioFavouritesControlButton.m; sourceTree = "<group>"; };
+		3D2CC24C17B65009005B4EA0 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		3D3257BB1651263900C843AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RadioPrefsGeneralViewController.xib; sourceTree = "<group>"; };
+		3D3257BC1651263900C843AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RadioPrefsRecordingViewController.xib; sourceTree = "<group>"; };
+		3D3257BD1651263900C843AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RHPreferencesWindow.xib; sourceTree = "<group>"; };
+		3D3257BE1651264E00C843AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RadioPrefsStationsViewController.xib; sourceTree = "<group>"; };
+		3D3257BF1651264E00C843AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3D3257C01651264E00C843AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RadioFavouritesViewController.xib; sourceTree = "<group>"; };
+		3D3257C21651264E00C843AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RadioPrefsStationDetailSheet.xib; sourceTree = "<group>"; };
+		3D3257C31651264F00C843AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RadioPrefsFavsViewController.xib; sourceTree = "<group>"; };
+		3D3605CE15DFB02000778048 /* RadioVolumeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioVolumeSlider.h; sourceTree = "<group>"; };
+		3D3605CF15DFB02000778048 /* RadioVolumeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioVolumeSlider.m; sourceTree = "<group>"; };
+		3D360B0E164E9BB30057AE7F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3D3C0E8315C9ADBF001F023D /* Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3C0E8715C9ADBF001F023D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3D3C0E8A15C9ADBF001F023D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3D3C0E8B15C9ADBF001F023D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3D3C0E8C15C9ADBF001F023D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D3C0E8F15C9ADBF001F023D /* Radio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Radio-Info.plist"; sourceTree = "<group>"; };
+		3D3C0E9315C9ADBF001F023D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D3C0E9515C9ADBF001F023D /* Radio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Radio-Prefix.pch"; sourceTree = "<group>"; };
+		3D3C0E9915C9ADBF001F023D /* RadioAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadioAppDelegate.h; sourceTree = "<group>"; };
+		3D3C0E9A15C9ADBF001F023D /* RadioAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadioAppDelegate.m; sourceTree = "<group>"; };
+		3D3F33ED15D00ADB00221952 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3D3F33EF15D00AED00221952 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		3D3F33F115D00AF500221952 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		3D4A58DA177592F100F335CA /* Radio.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Radio.sdef; sourceTree = "<group>"; };
+		3D4A58DC1775977100F335CA /* RadioScriptPlayCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioScriptPlayCommand.h; sourceTree = "<group>"; };
+		3D4A58DD1775977100F335CA /* RadioScriptPlayCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioScriptPlayCommand.m; sourceTree = "<group>"; };
+		3D4A58E31775D9BD00F335CA /* RadioScriptNextCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioScriptNextCommand.h; sourceTree = "<group>"; };
+		3D4A58E41775D9BD00F335CA /* RadioScriptNextCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioScriptNextCommand.m; sourceTree = "<group>"; };
+		3D4B3A661647B769002117E4 /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recording.m; path = Model/Recording.m; sourceTree = "<group>"; };
+		3D4B3AE2164847C4002117E4 /* RadioApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioApplication.h; sourceTree = "<group>"; };
+		3D4B3AE3164847C4002117E4 /* RadioApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioApplication.m; sourceTree = "<group>"; };
+		3D5EDCE5166D1FC4007E8A02 /* RadioStationTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioStationTableView.h; sourceTree = "<group>"; };
+		3D5EDCE6166D1FC4007E8A02 /* RadioStationTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioStationTableView.m; sourceTree = "<group>"; };
+		3D5FCC0F15D98D9C003ED27F /* RadioDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioDisplayViewController.h; sourceTree = "<group>"; };
+		3D5FCC1015D98D9C003ED27F /* RadioDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioDisplayViewController.m; sourceTree = "<group>"; };
+		3D5FCC1215D98E83003ED27F /* RadioDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioDisplayView.h; sourceTree = "<group>"; };
+		3D5FCC1315D98E83003ED27F /* RadioDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioDisplayView.m; sourceTree = "<group>"; };
+		3D6249BB15CAAF2100E0FF58 /* Radio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Radio.entitlements; sourceTree = "<group>"; };
+		3D6F5E561646C50F001F2D51 /* NSString+RadioExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RadioExtensions.h"; sourceTree = "<group>"; };
+		3D6F5E571646C50F001F2D51 /* NSString+RadioExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RadioExtensions.m"; sourceTree = "<group>"; };
+		3D75D57F15CDC791008F9604 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		3D85BAD515CE693E00D093E8 /* RadioHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RadioHelper.xcodeproj; path = ../RadioHelper/RadioHelper.xcodeproj; sourceTree = "<group>"; };
+		3D8D8DF71775E51A008CC428 /* RadioScriptPreviousCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioScriptPreviousCommand.h; sourceTree = "<group>"; };
+		3D8D8DF81775E51A008CC428 /* RadioScriptPreviousCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioScriptPreviousCommand.m; sourceTree = "<group>"; };
+		3D950A5915CE861500E2773B /* Radio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Radio.xcdatamodel; sourceTree = "<group>"; };
+		3D9BD6E115CFB1D60031C5D5 /* RadioPrefsRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioPrefsRecordingViewController.h; sourceTree = "<group>"; };
+		3D9BD6E215CFB1D60031C5D5 /* RadioPrefsRecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioPrefsRecordingViewController.m; sourceTree = "<group>"; };
+		3D9BFE9F1645A2AF00E94432 /* Recording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recording.h; path = Model/Recording.h; sourceTree = "<group>"; };
+		3D9BFEA21645A2AF00E94432 /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Channel.h; path = Model/Channel.h; sourceTree = "<group>"; };
+		3D9BFEA31645A2AF00E94432 /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Channel.m; path = Model/Channel.m; sourceTree = "<group>"; };
+		3DA22418163EB92300D443A6 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = "Radio/Third-Party-Libs/ffmpeg/lib/libswresample.a"; sourceTree = "<group>"; };
+		3DA2241D163EBC4D00D443A6 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
+		3DA2241E163EBC4D00D443A6 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
+		3DA2241F163EBC4D00D443A6 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
+		3DA22420163EBC4D00D443A6 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
+		3DA22448163EBF8D00D443A6 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3DA2244A163EBFB400D443A6 /* VideoDecodeAcceleration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoDecodeAcceleration.framework; path = System/Library/Frameworks/VideoDecodeAcceleration.framework; sourceTree = SDKROOT; };
+		3DB3C76D17529C370081E3CA /* radio.sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = radio.sqlite; path = Resources/radio.sqlite; sourceTree = "<group>"; };
+		3DB644C815CD936200BB36F6 /* RadioUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioUtils.h; sourceTree = "<group>"; };
+		3DB644C915CD936200BB36F6 /* RadioUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioUtils.m; sourceTree = "<group>"; };
+		3DB644D215CDA56000BB36F6 /* RHPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RHPreferencesWindowController.h; path = "Third-Party-Libs/RHPreferences/RHPreferencesWindowController.h"; sourceTree = "<group>"; };
+		3DB644D315CDA56000BB36F6 /* RHPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RHPreferencesWindowController.m; path = "Third-Party-Libs/RHPreferences/RHPreferencesWindowController.m"; sourceTree = "<group>"; };
+		3DB644E115CDA6CB00BB36F6 /* RHPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RHPreferences.h; path = "Third-Party-Libs/RHPreferences/RHPreferences.h"; sourceTree = "<group>"; };
+		3DB644E515CDA80F00BB36F6 /* RadioPrefsGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioPrefsGeneralViewController.h; sourceTree = "<group>"; };
+		3DB644E615CDA80F00BB36F6 /* RadioPrefsGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioPrefsGeneralViewController.m; sourceTree = "<group>"; };
+		3DB644EB15CDAA8C00BB36F6 /* RadioPrefsStationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioPrefsStationsViewController.h; sourceTree = "<group>"; };
+		3DB644EC15CDAA8C00BB36F6 /* RadioPrefsStationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioPrefsStationsViewController.m; sourceTree = "<group>"; };
+		3DBBF8D515CC12AA00EE11A3 /* RadioConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioConstants.h; sourceTree = "<group>"; };
+		3DC5FE9C17EA0BC0005515AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3DC5FEA017EA0BC1005515AA /* Radio Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Radio Tests-Info.plist"; sourceTree = "<group>"; };
+		3DC5FEA217EA0BC1005515AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DC5FEA417EA0BC1005515AA /* Radio_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Radio_Tests.m; sourceTree = "<group>"; };
+		3DC5FEA617EA0BC1005515AA /* Radio Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Radio Tests-Prefix.pch"; sourceTree = "<group>"; };
+		3DC5FEB017EA0C94005515AA /* Radio Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Radio Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DDA5CC715CDF37A004B0697 /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartAtLoginController.h; path = "Third-Party-Libs/StartAtLogin/StartAtLoginController.h"; sourceTree = "<group>"; };
+		3DDA5CC815CDF37A004B0697 /* StartAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartAtLoginController.m; path = "Third-Party-Libs/StartAtLogin/StartAtLoginController.m"; sourceTree = "<group>"; };
+		3DE3986B15E01B9300AA2861 /* RadioPrefsFavsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioPrefsFavsViewController.h; sourceTree = "<group>"; };
+		3DE3986C15E01B9300AA2861 /* RadioPrefsFavsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioPrefsFavsViewController.m; sourceTree = "<group>"; };
+		3DE7AE891644FACF00364540 /* Radio.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Radio.iconset; sourceTree = SOURCE_ROOT; };
+		3DF50C4415C9BBC5003D519C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3DF7609E1750E4FB008C1EF8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5FD1F466D5C32FF576915596 /* RadioCloudManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioCloudManager.h; sourceTree = "<group>"; };
+		5FD1F4756477A82548CF2A00 /* RadioCrowdSourcingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioCrowdSourcingManager.m; sourceTree = "<group>"; };
+		5FD1F6EC54CB3D66AD4BBC99 /* RadioCrowdSourcingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioCrowdSourcingManager.h; sourceTree = "<group>"; };
+		5FD1F6EFE3955B36E9B32ADD /* RadioCloudManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioCloudManager.m; sourceTree = "<group>"; };
+		5FD1F8C36CF25C8C30D73A3B /* RadioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioController.h; sourceTree = "<group>"; };
+		5FD1FFB36F002D3D6DA24807 /* RadioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D3C0E8015C9ADBF001F023D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2CC24D17B65009005B4EA0 /* libiconv.dylib in Frameworks */,
+				3DF7609F1750E4FB008C1EF8 /* AVFoundation.framework in Frameworks */,
+				3D360B0F164E9BB30057AE7F /* QuartzCore.framework in Frameworks */,
+				3DA2244B163EBFB400D443A6 /* VideoDecodeAcceleration.framework in Frameworks */,
+				3DA22449163EBF8D00D443A6 /* CoreVideo.framework in Frameworks */,
+				3DA22419163EB92300D443A6 /* libswresample.a in Frameworks */,
+				3D2513C81634275D00356CB0 /* SystemConfiguration.framework in Frameworks */,
+				3D0A861015D6DDF5005203BE /* QTKit.framework in Frameworks */,
+				3D3F33F215D00AF500221952 /* libxml2.dylib in Frameworks */,
+				3D3F33F015D00AED00221952 /* libbz2.dylib in Frameworks */,
+				3D3F33EE15D00ADB00221952 /* libz.dylib in Frameworks */,
+				3D75D58015CDC791008F9604 /* ServiceManagement.framework in Frameworks */,
+				3DF50C4515C9BBC5003D519C /* AudioToolbox.framework in Frameworks */,
+				3D3C0E8815C9ADBF001F023D /* Cocoa.framework in Frameworks */,
+				3DA22421163EBC4D00D443A6 /* libavcodec.a in Frameworks */,
+				3DA22422163EBC4D00D443A6 /* libavformat.a in Frameworks */,
+				3DA22423163EBC4D00D443A6 /* libavutil.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC5FEAD17EA0C94005515AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC5FEB117EA0C95005515AA /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D251380163422D200356CB0 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				3D251381163422D200356CB0 /* Reachability.h */,
+				3D251382163422D200356CB0 /* Reachability.m */,
+			);
+			name = Reachability;
+			path = "Third-Party-Libs/Reachability";
+			sourceTree = "<group>";
+		};
+		3D251388163423D100356CB0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				3D251389163423D100356CB0 /* libavcodec */,
+				3D251392163423D100356CB0 /* libavformat */,
+				3D251396163423D100356CB0 /* libavutil */,
+				3D2513BF163423D100356CB0 /* libswresample */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		3D251389163423D100356CB0 /* libavcodec */ = {
+			isa = PBXGroup;
+			children = (
+				3D25138A163423D100356CB0 /* avcodec.h */,
+				3D25138B163423D100356CB0 /* avfft.h */,
+				3D25138C163423D100356CB0 /* dxva2.h */,
+				3D25138D163423D100356CB0 /* vaapi.h */,
+				3D25138E163423D100356CB0 /* vda.h */,
+				3D25138F163423D100356CB0 /* vdpau.h */,
+				3D251390163423D100356CB0 /* version.h */,
+				3D251391163423D100356CB0 /* xvmc.h */,
+			);
+			path = libavcodec;
+			sourceTree = "<group>";
+		};
+		3D251392163423D100356CB0 /* libavformat */ = {
+			isa = PBXGroup;
+			children = (
+				3D251393163423D100356CB0 /* avformat.h */,
+				3D251394163423D100356CB0 /* avio.h */,
+				3D251395163423D100356CB0 /* version.h */,
+			);
+			path = libavformat;
+			sourceTree = "<group>";
+		};
+		3D251396163423D100356CB0 /* libavutil */ = {
+			isa = PBXGroup;
+			children = (
+				3D251397163423D100356CB0 /* adler32.h */,
+				3D251398163423D100356CB0 /* aes.h */,
+				3D251399163423D100356CB0 /* attributes.h */,
+				3D25139A163423D100356CB0 /* audio_fifo.h */,
+				3D25139B163423D100356CB0 /* audioconvert.h */,
+				3D25139C163423D100356CB0 /* avassert.h */,
+				3D25139D163423D100356CB0 /* avconfig.h */,
+				3D25139E163423D100356CB0 /* avstring.h */,
+				3D25139F163423D100356CB0 /* avutil.h */,
+				3D2513A0163423D100356CB0 /* base64.h */,
+				3D2513A1163423D100356CB0 /* bprint.h */,
+				3D2513A2163423D100356CB0 /* bswap.h */,
+				3D2513A3163423D100356CB0 /* common.h */,
+				3D2513A4163423D100356CB0 /* cpu.h */,
+				3D2513A5163423D100356CB0 /* crc.h */,
+				3D2513A6163423D100356CB0 /* dict.h */,
+				3D2513A7163423D100356CB0 /* error.h */,
+				3D2513A8163423D100356CB0 /* eval.h */,
+				3D2513A9163423D100356CB0 /* fifo.h */,
+				3D2513AA163423D100356CB0 /* file.h */,
+				3D2513AB163423D100356CB0 /* imgutils.h */,
+				3D2513AC163423D100356CB0 /* intfloat.h */,
+				3D2513AD163423D100356CB0 /* intfloat_readwrite.h */,
+				3D2513AE163423D100356CB0 /* intreadwrite.h */,
+				3D2513AF163423D100356CB0 /* lfg.h */,
+				3D2513B0163423D100356CB0 /* log.h */,
+				3D2513B1163423D100356CB0 /* lzo.h */,
+				3D2513B2163423D100356CB0 /* mathematics.h */,
+				3D2513B3163423D100356CB0 /* md5.h */,
+				3D2513B4163423D100356CB0 /* mem.h */,
+				3D2513B5163423D100356CB0 /* opt.h */,
+				3D2513B6163423D100356CB0 /* parseutils.h */,
+				3D2513B7163423D100356CB0 /* pixdesc.h */,
+				3D2513B8163423D100356CB0 /* pixfmt.h */,
+				3D2513B9163423D100356CB0 /* random_seed.h */,
+				3D2513BA163423D100356CB0 /* rational.h */,
+				3D2513BB163423D100356CB0 /* samplefmt.h */,
+				3D2513BC163423D100356CB0 /* sha.h */,
+				3D2513BD163423D100356CB0 /* timecode.h */,
+				3D2513BE163423D100356CB0 /* timestamp.h */,
+			);
+			path = libavutil;
+			sourceTree = "<group>";
+		};
+		3D2513BF163423D100356CB0 /* libswresample */ = {
+			isa = PBXGroup;
+			children = (
+				3D2513C0163423D100356CB0 /* swresample.h */,
+			);
+			path = libswresample;
+			sourceTree = "<group>";
+		};
+		3D25141C1635250500356CB0 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				3D25141D1635255D00356CB0 /* RadioFavouritesControlButton.h */,
+				3D25141E1635255E00356CB0 /* RadioFavouritesControlButton.m */,
+				3D1213D815E1998D00328A14 /* RadioFavouritesViewController.h */,
+				3D1213D915E1998D00328A14 /* RadioFavouritesViewController.m */,
+				3D11B72D1646AA0800229E6E /* RadioFavouritesViewController.xib */,
+			);
+			name = Favourites;
+			sourceTree = "<group>";
+		};
+		3D3C0E7815C9ADBF001F023D = {
+			isa = PBXGroup;
+			children = (
+				3D85BAD515CE693E00D093E8 /* RadioHelper.xcodeproj */,
+				3D3C0E8D15C9ADBF001F023D /* Radio */,
+				3DC5FE9E17EA0BC0005515AA /* Radio Tests */,
+				3D3C0E8615C9ADBF001F023D /* Frameworks */,
+				3D3C0E8415C9ADBF001F023D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D3C0E8415C9ADBF001F023D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C0E8315C9ADBF001F023D /* Radio.app */,
+				3DC5FEB017EA0C94005515AA /* Radio Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D3C0E8615C9ADBF001F023D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D2CC24C17B65009005B4EA0 /* libiconv.dylib */,
+				3DF7609E1750E4FB008C1EF8 /* AVFoundation.framework */,
+				3D360B0E164E9BB30057AE7F /* QuartzCore.framework */,
+				3DA2244A163EBFB400D443A6 /* VideoDecodeAcceleration.framework */,
+				3DA22448163EBF8D00D443A6 /* CoreVideo.framework */,
+				3DA22418163EB92300D443A6 /* libswresample.a */,
+				3D0A860F15D6DDF5005203BE /* QTKit.framework */,
+				3D3F33F115D00AF500221952 /* libxml2.dylib */,
+				3D3F33EF15D00AED00221952 /* libbz2.dylib */,
+				3D3F33ED15D00ADB00221952 /* libz.dylib */,
+				3D2513C91634276E00356CB0 /* AudioUnit.framework */,
+				3D2513C71634275D00356CB0 /* SystemConfiguration.framework */,
+				3D75D57F15CDC791008F9604 /* ServiceManagement.framework */,
+				3DF50C4415C9BBC5003D519C /* AudioToolbox.framework */,
+				3D3C0E8715C9ADBF001F023D /* Cocoa.framework */,
+				3DC5FE9C17EA0BC0005515AA /* XCTest.framework */,
+				3D3C0E8915C9ADBF001F023D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D3C0E8915C9ADBF001F023D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C0E8A15C9ADBF001F023D /* AppKit.framework */,
+				3D3C0E8B15C9ADBF001F023D /* CoreData.framework */,
+				3D3C0E8C15C9ADBF001F023D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3D3C0E8D15C9ADBF001F023D /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				3D6249BB15CAAF2100E0FF58 /* Radio.entitlements */,
+				3DBBF8D515CC12AA00EE11A3 /* RadioConstants.h */,
+				3D4A58D9177592D600F335CA /* Scripting */,
+				3DBBF8AC15CBCFC900EE11A3 /* App Lifecycle */,
+				3DBBF8AA15CBCF6400EE11A3 /* UI */,
+				3D6F5E7E1646F90D001F2D51 /* Radio Controller */,
+				3DA22425163EBD5300D443A6 /* RadioCore */,
+				3DBBF8AB15CBCFAE00EE11A3 /* Core Data */,
+				3DB644C615CD934D00BB36F6 /* Utils and Libs */,
+				3D3C0E8E15C9ADBF001F023D /* Supporting Files */,
+				5FD1FD4D67DB93AF9D82D915 /* Managers */,
+				3DF50C3015C9B329003D519C /* Resources */,
+				3D014CED184E4B630015C847 /* Images.xcassets */,
+			);
+			path = Radio;
+			sourceTree = "<group>";
+		};
+		3D3C0E8E15C9ADBF001F023D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C0E8F15C9ADBF001F023D /* Radio-Info.plist */,
+				3D3C0E9315C9ADBF001F023D /* main.m */,
+				3D3C0E9515C9ADBF001F023D /* Radio-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D3F34E015D0127800221952 /* ffmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				3D251388163423D100356CB0 /* include */,
+				3D3F351315D0127800221952 /* lib */,
+			);
+			name = ffmpeg;
+			path = "Third-Party-Libs/ffmpeg";
+			sourceTree = "<group>";
+		};
+		3D3F351315D0127800221952 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3DA2241D163EBC4D00D443A6 /* libavcodec.a */,
+				3DA2241E163EBC4D00D443A6 /* libavformat.a */,
+				3DA2241F163EBC4D00D443A6 /* libavutil.a */,
+				3DA22420163EBC4D00D443A6 /* libswresample.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		3D4A58D9177592D600F335CA /* Scripting */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A58DA177592F100F335CA /* Radio.sdef */,
+				3D4A58DC1775977100F335CA /* RadioScriptPlayCommand.h */,
+				3D4A58DD1775977100F335CA /* RadioScriptPlayCommand.m */,
+				3D4A58E31775D9BD00F335CA /* RadioScriptNextCommand.h */,
+				3D4A58E41775D9BD00F335CA /* RadioScriptNextCommand.m */,
+				3D8D8DF71775E51A008CC428 /* RadioScriptPreviousCommand.h */,
+				3D8D8DF81775E51A008CC428 /* RadioScriptPreviousCommand.m */,
+			);
+			path = Scripting;
+			sourceTree = "<group>";
+		};
+		3D6F5E551646C4F3001F2D51 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F5E561646C50F001F2D51 /* NSString+RadioExtensions.h */,
+				3D6F5E571646C50F001F2D51 /* NSString+RadioExtensions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		3D6F5E7E1646F90D001F2D51 /* Radio Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FD1F8C36CF25C8C30D73A3B /* RadioController.h */,
+				5FD1FFB36F002D3D6DA24807 /* RadioController.m */,
+			);
+			name = "Radio Controller";
+			sourceTree = "<group>";
+		};
+		3D85BAD615CE693E00D093E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D85BADE15CE693E00D093E8 /* RadioHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D9BD6E015CFB1B50031C5D5 /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				3D9BD6E115CFB1D60031C5D5 /* RadioPrefsRecordingViewController.h */,
+				3D9BD6E215CFB1D60031C5D5 /* RadioPrefsRecordingViewController.m */,
+				3D11B7301646AA1600229E6E /* RadioPrefsRecordingViewController.xib */,
+			);
+			name = Recording;
+			sourceTree = "<group>";
+		};
+		3DA22425163EBD5300D443A6 /* RadioCore */ = {
+			isa = PBXGroup;
+			children = (
+				3D1701C019D6C99A0022FA0C /* GCDMulticastDelegate.h */,
+				3D1701C119D6C99A0022FA0C /* GCDMulticastDelegate.m */,
+				3D1701C219D6C99A0022FA0C /* NSHTTPURLResponse+RadioTunes.h */,
+				3D1701C319D6C99A0022FA0C /* NSHTTPURLResponse+RadioTunes.m */,
+				3D1701C419D6C99A0022FA0C /* RadioTunes-Prefix.pch */,
+				3D1701C519D6C99A0022FA0C /* RadioTunes.h */,
+				3D1701C619D6C99A0022FA0C /* YLASXParser.h */,
+				3D1701C719D6C99A0022FA0C /* YLASXParser.m */,
+				3D1701C819D6C99A0022FA0C /* YLAudioConverter.h */,
+				3D1701C919D6C99A0022FA0C /* YLAudioConverter.m */,
+				3D1701CA19D6C99A0022FA0C /* YLAudioPacket.h */,
+				3D1701CB19D6C99A0022FA0C /* YLAudioPacket.m */,
+				3D1701CC19D6C99A0022FA0C /* YLAudioQueue.h */,
+				3D1701CD19D6C99A0022FA0C /* YLAudioQueue.m */,
+				3D1701D019D6C99A0022FA0C /* YLHTTPRadio.h */,
+				3D1701D119D6C99A0022FA0C /* YLHTTPRadio.m */,
+				3D1701D219D6C99A0022FA0C /* YLM3UParser.h */,
+				3D1701D319D6C99A0022FA0C /* YLM3UParser.m */,
+				3D1701D419D6C99A0022FA0C /* YLMMSRadio.h */,
+				3D1701D519D6C99A0022FA0C /* YLMMSRadio.m */,
+				3D1701D619D6C99A0022FA0C /* YLPlaylistParserProtocol.h */,
+				3D1701D719D6C99A0022FA0C /* YLPLSParser.h */,
+				3D1701D819D6C99A0022FA0C /* YLPLSParser.m */,
+				3D1701D919D6C99A0022FA0C /* YLRadio.h */,
+				3D1701DA19D6C99A0022FA0C /* YLRadio.m */,
+				3D1701DB19D6C99A0022FA0C /* YLReachability.h */,
+				3D1701DC19D6C99A0022FA0C /* YLReachability.m */,
+				3D1701DD19D6C99A0022FA0C /* YLXMLUtilities.h */,
+				3D1701DE19D6C99A0022FA0C /* YLXMLUtilities.m */,
+				3D1701DF19D6C99A0022FA0C /* YLXSPFParser.h */,
+				3D1701E019D6C99A0022FA0C /* YLXSPFParser.m */,
+			);
+			name = RadioCore;
+			path = "Third-Party-Libs/RadioCore";
+			sourceTree = "<group>";
+		};
+		3DB3C76C17529BEC0081E3CA /* Seed */ = {
+			isa = PBXGroup;
+			children = (
+				3DB3C76D17529C370081E3CA /* radio.sqlite */,
+			);
+			name = Seed;
+			sourceTree = "<group>";
+		};
+		3DB644C615CD934D00BB36F6 /* Utils and Libs */ = {
+			isa = PBXGroup;
+			children = (
+				3D6F5E551646C4F3001F2D51 /* Categories */,
+				3D251380163422D200356CB0 /* Reachability */,
+				3D3F34E015D0127800221952 /* ffmpeg */,
+				3DDA5CCA15CDF37D004B0697 /* Start At Login */,
+				3DB644E015CDA6B000BB36F6 /* Prefs */,
+				3DB644C815CD936200BB36F6 /* RadioUtils.h */,
+				3DB644C915CD936200BB36F6 /* RadioUtils.m */,
+			);
+			name = "Utils and Libs";
+			sourceTree = "<group>";
+		};
+		3DB644D915CDA60200BB36F6 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				3DB644DA15CDA64D00BB36F6 /* General */,
+				3DB644EA15CDAA7B00BB36F6 /* Stations */,
+				3DE3986A15E01ABF00AA2861 /* Favourites */,
+				3D9BD6E015CFB1B50031C5D5 /* Recording */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		3DB644DA15CDA64D00BB36F6 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				3DB644E515CDA80F00BB36F6 /* RadioPrefsGeneralViewController.h */,
+				3DB644E615CDA80F00BB36F6 /* RadioPrefsGeneralViewController.m */,
+				3D11B73F1646AA6400229E6E /* RadioPrefsGeneralViewController.xib */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		3DB644E015CDA6B000BB36F6 /* Prefs */ = {
+			isa = PBXGroup;
+			children = (
+				3D11B7331646AA2400229E6E /* RHPreferencesWindow.xib */,
+				3DB644E115CDA6CB00BB36F6 /* RHPreferences.h */,
+				3DB644D215CDA56000BB36F6 /* RHPreferencesWindowController.h */,
+				3DB644D315CDA56000BB36F6 /* RHPreferencesWindowController.m */,
+			);
+			name = Prefs;
+			sourceTree = "<group>";
+		};
+		3DB644EA15CDAA7B00BB36F6 /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+				3D5EDCE5166D1FC4007E8A02 /* RadioStationTableView.h */,
+				3D5EDCE6166D1FC4007E8A02 /* RadioStationTableView.m */,
+				3DB644EB15CDAA8C00BB36F6 /* RadioPrefsStationsViewController.h */,
+				3DB644EC15CDAA8C00BB36F6 /* RadioPrefsStationsViewController.m */,
+				3D11B73C1646AA3400229E6E /* RadioPrefsStationsViewController.xib */,
+				3D11B7391646AA2E00229E6E /* RadioPrefsStationDetailSheet.xib */,
+			);
+			name = Stations;
+			sourceTree = "<group>";
+		};
+		3DBBF8AA15CBCF6400EE11A3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3DBBF8D415CC0FDF00EE11A3 /* Menu */,
+				3DB644D915CDA60200BB36F6 /* Preferences */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3DBBF8AB15CBCFAE00EE11A3 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				3D950A5815CE861500E2773B /* Radio.xcdatamodeld */,
+				3D9BFEA21645A2AF00E94432 /* Channel.h */,
+				3D9BFEA31645A2AF00E94432 /* Channel.m */,
+				3D9BFE9F1645A2AF00E94432 /* Recording.h */,
+				3D4B3A661647B769002117E4 /* Recording.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		3DBBF8AC15CBCFC900EE11A3 /* App Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				3D3C0E9915C9ADBF001F023D /* RadioAppDelegate.h */,
+				3D3C0E9A15C9ADBF001F023D /* RadioAppDelegate.m */,
+				3D4B3AE2164847C4002117E4 /* RadioApplication.h */,
+				3D4B3AE3164847C4002117E4 /* RadioApplication.m */,
+			);
+			name = "App Lifecycle";
+			sourceTree = "<group>";
+		};
+		3DBBF8D415CC0FDF00EE11A3 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				3D5FCC0F15D98D9C003ED27F /* RadioDisplayViewController.h */,
+				3D5FCC1015D98D9C003ED27F /* RadioDisplayViewController.m */,
+				3D5FCC1215D98E83003ED27F /* RadioDisplayView.h */,
+				3D5FCC1315D98E83003ED27F /* RadioDisplayView.m */,
+				3D13D4F115DE1C78002A31BE /* RadioControlButton.h */,
+				3D13D4F215DE1C78002A31BE /* RadioControlButton.m */,
+				3D3605CE15DFB02000778048 /* RadioVolumeSlider.h */,
+				3D3605CF15DFB02000778048 /* RadioVolumeSlider.m */,
+				3D75D57815CDC2D3008F9604 /* MainMenu.xib */,
+				3D25141C1635250500356CB0 /* Favourites */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		3DC5FE9E17EA0BC0005515AA /* Radio Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3DC5FEA417EA0BC1005515AA /* Radio_Tests.m */,
+				3DC5FE9F17EA0BC1005515AA /* Supporting Files */,
+			);
+			path = "Radio Tests";
+			sourceTree = "<group>";
+		};
+		3DC5FE9F17EA0BC1005515AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DC5FEA017EA0BC1005515AA /* Radio Tests-Info.plist */,
+				3DC5FEA117EA0BC1005515AA /* InfoPlist.strings */,
+				3DC5FEA617EA0BC1005515AA /* Radio Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DDA5CCA15CDF37D004B0697 /* Start At Login */ = {
+			isa = PBXGroup;
+			children = (
+				3DDA5CC715CDF37A004B0697 /* StartAtLoginController.h */,
+				3DDA5CC815CDF37A004B0697 /* StartAtLoginController.m */,
+			);
+			name = "Start At Login";
+			sourceTree = "<group>";
+		};
+		3DE3986A15E01ABF00AA2861 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				3DE3986B15E01B9300AA2861 /* RadioPrefsFavsViewController.h */,
+				3DE3986C15E01B9300AA2861 /* RadioPrefsFavsViewController.m */,
+				3D11B7361646AA2900229E6E /* RadioPrefsFavsViewController.xib */,
+			);
+			name = Favourites;
+			sourceTree = "<group>";
+		};
+		3DF50C3015C9B329003D519C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DE7AE891644FACF00364540 /* Radio.iconset */,
+				3DB3C76C17529BEC0081E3CA /* Seed */,
+				5FD1FF438E11FE66336D6547 /* MenuItems */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5FD1FD4D67DB93AF9D82D915 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5FD1F4756477A82548CF2A00 /* RadioCrowdSourcingManager.m */,
+				5FD1F6EC54CB3D66AD4BBC99 /* RadioCrowdSourcingManager.h */,
+				5FD1F6EFE3955B36E9B32ADD /* RadioCloudManager.m */,
+				5FD1F466D5C32FF576915596 /* RadioCloudManager.h */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		5FD1FF438E11FE66336D6547 /* MenuItems */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MenuItems;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D3C0E8215C9ADBF001F023D /* Radio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D3C0EA415C9ADBF001F023D /* Build configuration list for PBXNativeTarget "Radio" */;
+			buildPhases = (
+				3D75D58815CDC7C7008F9604 /* Increment Build Number */,
+				3D3C0E7F15C9ADBF001F023D /* Sources */,
+				3D3C0E8015C9ADBF001F023D /* Frameworks */,
+				3D3C0E8115C9ADBF001F023D /* Resources */,
+				3DB9E47815CDCB9500A7C594 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D36DD8115CEB4750099175A /* PBXTargetDependency */,
+			);
+			name = Radio;
+			productName = Radio;
+			productReference = 3D3C0E8315C9ADBF001F023D /* Radio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DC5FEAF17EA0C94005515AA /* Radio Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC5FEBD17EA0C95005515AA /* Build configuration list for PBXNativeTarget "Radio Tests" */;
+			buildPhases = (
+				3DC5FEAC17EA0C94005515AA /* Sources */,
+				3DC5FEAD17EA0C94005515AA /* Frameworks */,
+				3DC5FEAE17EA0C94005515AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DC5FEBC17EA0C95005515AA /* PBXTargetDependency */,
+			);
+			name = "Radio Tests";
+			productName = "Radio Tests";
+			productReference = 3DC5FEB017EA0C94005515AA /* Radio Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D3C0E7A15C9ADBF001F023D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Radio;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Het is Simpel";
+				TargetAttributes = {
+					3D3C0E8215C9ADBF001F023D = {
+						DevelopmentTeam = 82J68954P8;
+					};
+					3DC5FEAF17EA0C94005515AA = {
+						TestTargetID = 3D3C0E8215C9ADBF001F023D;
+					};
+				};
+			};
+			buildConfigurationList = 3D3C0E7D15C9ADBF001F023D /* Build configuration list for PBXProject "Radio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				nl,
+			);
+			mainGroup = 3D3C0E7815C9ADBF001F023D;
+			productRefGroup = 3D3C0E8415C9ADBF001F023D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3D85BAD615CE693E00D093E8 /* Products */;
+					ProjectRef = 3D85BAD515CE693E00D093E8 /* RadioHelper.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3D3C0E8215C9ADBF001F023D /* Radio */,
+				3DC5FEAF17EA0C94005515AA /* Radio Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3D85BADE15CE693E00D093E8 /* RadioHelper.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RadioHelper.app;
+			remoteRef = 3D85BADD15CE693E00D093E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D3C0E8115C9ADBF001F023D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D11B7311646AA2400229E6E /* RHPreferencesWindow.xib in Resources */,
+				3D75D57A15CDC2D3008F9604 /* MainMenu.xib in Resources */,
+				3D11B73D1646AA6400229E6E /* RadioPrefsGeneralViewController.xib in Resources */,
+				3D11B73A1646AA3400229E6E /* RadioPrefsStationsViewController.xib in Resources */,
+				3D11B72E1646AA1600229E6E /* RadioPrefsRecordingViewController.xib in Resources */,
+				3D11B7341646AA2900229E6E /* RadioPrefsFavsViewController.xib in Resources */,
+				3D11B72B1646AA0800229E6E /* RadioFavouritesViewController.xib in Resources */,
+				3DE7AE8A1644FACF00364540 /* Radio.iconset in Resources */,
+				3D11B7371646AA2E00229E6E /* RadioPrefsStationDetailSheet.xib in Resources */,
+				3D014CEE184E4B630015C847 /* Images.xcassets in Resources */,
+				3DB3C76E17529C370081E3CA /* radio.sqlite in Resources */,
+				3D4A58DB177592F100F335CA /* Radio.sdef in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC5FEAE17EA0C94005515AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D75D58815CDC7C7008F9604 /* Increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# increment build number\nNEW_VERSION=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\" | /usr/bin/perl -pe 's/(\\d+\\.\\d+\\.)(\\d+)/$1.($2+1)/eg'`\n/usr/libexec/PListBuddy -c \"Set CFBundleVersion `expr $NEW_VERSION + 1`\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D3C0E7F15C9ADBF001F023D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB644E415CDA77E00BB36F6 /* RHPreferencesWindowController.m in Sources */,
+				3D1701E619D6C99A0022FA0C /* YLAudioQueue.m in Sources */,
+				3D3C0E9415C9ADBF001F023D /* main.m in Sources */,
+				3D3C0E9B15C9ADBF001F023D /* RadioAppDelegate.m in Sources */,
+				3D1701E919D6C99A0022FA0C /* YLM3UParser.m in Sources */,
+				3D1701EE19D6C99A0022FA0C /* YLXMLUtilities.m in Sources */,
+				3D1701E819D6C99A0022FA0C /* YLHTTPRadio.m in Sources */,
+				3DB644CA15CD936200BB36F6 /* RadioUtils.m in Sources */,
+				3D1701E119D6C99A0022FA0C /* GCDMulticastDelegate.m in Sources */,
+				3D1701E219D6C99A0022FA0C /* NSHTTPURLResponse+RadioTunes.m in Sources */,
+				3DB644E815CDA80F00BB36F6 /* RadioPrefsGeneralViewController.m in Sources */,
+				3DB644EE15CDAA8C00BB36F6 /* RadioPrefsStationsViewController.m in Sources */,
+				3DDA5CC915CDF37A004B0697 /* StartAtLoginController.m in Sources */,
+				3D950A5D15CE861500E2773B /* Radio.xcdatamodeld in Sources */,
+				3D9BD6E415CFB1D60031C5D5 /* RadioPrefsRecordingViewController.m in Sources */,
+				3D5FCC1115D98D9C003ED27F /* RadioDisplayViewController.m in Sources */,
+				3D5FCC1415D98E83003ED27F /* RadioDisplayView.m in Sources */,
+				3D1701EC19D6C99A0022FA0C /* YLRadio.m in Sources */,
+				3D1701EA19D6C99A0022FA0C /* YLMMSRadio.m in Sources */,
+				3D1701EF19D6C99A0022FA0C /* YLXSPFParser.m in Sources */,
+				3D13D4F315DE1C78002A31BE /* RadioControlButton.m in Sources */,
+				3D1701EB19D6C99A0022FA0C /* YLPLSParser.m in Sources */,
+				3D3605D015DFB02000778048 /* RadioVolumeSlider.m in Sources */,
+				3DE3986E15E01B9300AA2861 /* RadioPrefsFavsViewController.m in Sources */,
+				3D1213DA15E1998D00328A14 /* RadioFavouritesViewController.m in Sources */,
+				3D251383163422D200356CB0 /* Reachability.m in Sources */,
+				3D25141F1635255E00356CB0 /* RadioFavouritesControlButton.m in Sources */,
+				3D9BFEA41645A2AF00E94432 /* Channel.m in Sources */,
+				3D6F5E581646C50F001F2D51 /* NSString+RadioExtensions.m in Sources */,
+				5FD1FD58F615CE87DC1CC722 /* RadioController.m in Sources */,
+				3D1701ED19D6C99A0022FA0C /* YLReachability.m in Sources */,
+				3D4B3A671647B769002117E4 /* Recording.m in Sources */,
+				3D4B3AE4164847C4002117E4 /* RadioApplication.m in Sources */,
+				3D38647316517015008280A9 /* RadioCrowdSourcingManager.m in Sources */,
+				3D1701E519D6C99A0022FA0C /* YLAudioPacket.m in Sources */,
+				5FD1FA59156E79C5B5592885 /* RadioCloudManager.m in Sources */,
+				3D5EDCE7166D1FC4007E8A02 /* RadioStationTableView.m in Sources */,
+				3D4A58DE1775977100F335CA /* RadioScriptPlayCommand.m in Sources */,
+				3D1701E419D6C99A0022FA0C /* YLAudioConverter.m in Sources */,
+				3D4A58E51775D9BD00F335CA /* RadioScriptNextCommand.m in Sources */,
+				3D1701E319D6C99A0022FA0C /* YLASXParser.m in Sources */,
+				3D8D8DF91775E51A008CC428 /* RadioScriptPreviousCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC5FEAC17EA0C94005515AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D36DD8115CEB4750099175A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RadioHelper;
+			targetProxy = 3D36DD8015CEB4750099175A /* PBXContainerItemProxy */;
+		};
+		3DC5FEBC17EA0C95005515AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D3C0E8215C9ADBF001F023D /* Radio */;
+			targetProxy = 3DC5FEBB17EA0C95005515AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D11B72D1646AA0800229E6E /* RadioFavouritesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3257C01651264E00C843AC /* en */,
+			);
+			name = RadioFavouritesViewController.xib;
+			sourceTree = "<group>";
+		};
+		3D11B7301646AA1600229E6E /* RadioPrefsRecordingViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3257BC1651263900C843AC /* en */,
+			);
+			name = RadioPrefsRecordingViewController.xib;
+			sourceTree = "<group>";
+		};
+		3D11B7331646AA2400229E6E /* RHPreferencesWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3257BD1651263900C843AC /* en */,
+			);
+			name = RHPreferencesWindow.xib;
+			path = "Third-Party-Libs/RHPreferences";
+			sourceTree = "<group>";
+		};
+		3D11B7361646AA2900229E6E /* RadioPrefsFavsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3257C31651264F00C843AC /* en */,
+			);
+			name = RadioPrefsFavsViewController.xib;
+			sourceTree = "<group>";
+		};
+		3D11B7391646AA2E00229E6E /* RadioPrefsStationDetailSheet.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3257C21651264E00C843AC /* en */,
+			);
+			name = RadioPrefsStationDetailSheet.xib;
+			sourceTree = "<group>";
+		};
+		3D11B73C1646AA3400229E6E /* RadioPrefsStationsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3257BE1651264E00C843AC /* en */,
+			);
+			name = RadioPrefsStationsViewController.xib;
+			sourceTree = "<group>";
+		};
+		3D11B73F1646AA6400229E6E /* RadioPrefsGeneralViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3257BB1651263900C843AC /* en */,
+			);
+			name = RadioPrefsGeneralViewController.xib;
+			sourceTree = "<group>";
+		};
+		3D75D57815CDC2D3008F9604 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3257BF1651264E00C843AC /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		3DC5FEA117EA0BC1005515AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC5FEA217EA0BC1005515AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D3C0EA215C9ADBF001F023D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer: Damien Glancy (Y7JXHY5S9C)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"${SRCROOT}/Radio/Third-Party-Libs/ffmpeg/include",
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"${SRCROOT}/Radio/Third-Party-Libs/ffmpeg/lib",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-all_load",
+				);
+				PROVISIONING_PROFILE = "BE467A5A-A982-4117-A69F-B639A9C9EB12";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		3D3C0EA315C9ADBF001F023D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer: Damien Glancy (Y7JXHY5S9C)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"${SRCROOT}/Radio/Third-Party-Libs/ffmpeg/include",
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"${SRCROOT}/Radio/Third-Party-Libs/ffmpeg/lib",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-all_load",
+				);
+				PROVISIONING_PROFILE = "BE467A5A-A982-4117-A69F-B639A9C9EB12";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		3D3C0EA515C9ADBF001F023D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Radio/Radio.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Radio/Radio-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/ObjectiveRecord\"",
+					"\"${PODS_ROOT}/Headers/ObjectiveSugar\"",
+					/usr/include/libxml2,
+					"$(SRCROOT)/Radio/Third-Party-Libs/ffmpeg/include",
+					"$(inherited)/**",
+				);
+				INFOPLIST_FILE = "Radio/Radio-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Radio/Third-Party-Libs/ffmpeg/lib\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0103569a-dc4f-4be4-bb17-395b6376b319";
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3D3C0EA615C9ADBF001F023D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Radio/Radio.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Radio/Radio-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/ObjectiveRecord\"",
+					"\"${PODS_ROOT}/Headers/ObjectiveSugar\"",
+					/usr/include/libxml2,
+					"$(SRCROOT)/Radio/Third-Party-Libs/ffmpeg/include",
+					"$(inherited)/**",
+				);
+				INFOPLIST_FILE = "Radio/Radio-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Radio/Third-Party-Libs/ffmpeg/lib\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5675dddd-7a63-45dd-b9c5-299fd949f568";
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3DC5FEBE17EA0C95005515AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Radio.app/Contents/MacOS/Radio";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Radio Tests/Radio Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Radio Tests/Radio Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3DC5FEBF17EA0C95005515AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Radio.app/Contents/MacOS/Radio";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Radio Tests/Radio Tests-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Radio Tests/Radio Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D3C0E7D15C9ADBF001F023D /* Build configuration list for PBXProject "Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3C0EA215C9ADBF001F023D /* Debug */,
+				3D3C0EA315C9ADBF001F023D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D3C0EA415C9ADBF001F023D /* Build configuration list for PBXNativeTarget "Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3C0EA515C9ADBF001F023D /* Debug */,
+				3D3C0EA615C9ADBF001F023D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC5FEBD17EA0C95005515AA /* Build configuration list for PBXNativeTarget "Radio Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC5FEBE17EA0C95005515AA /* Debug */,
+				3DC5FEBF17EA0C95005515AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3D950A5815CE861500E2773B /* Radio.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3D950A5915CE861500E2773B /* Radio.xcdatamodel */,
+			);
+			currentVersion = 3D950A5915CE861500E2773B /* Radio.xcdatamodel */;
+			name = Radio.xcdatamodeld;
+			path = Model/Radio.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3D3C0E7A15C9ADBF001F023D /* Project object */;
+}

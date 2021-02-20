@@ -1,0 +1,159 @@
+#!/bin/sh
+# Copyright 2011 Yakamoz Labs. All rights reserved.
+
+set -e
+
+SCRIPT_DIR=$( (cd -P $(dirname $0) && pwd) )
+
+ARCHS=${ARCHS:-"x86_64"}
+
+SDK_MIN_VERSION=${SDK_MIN_VERSION:-"5.0"}
+SDK_VERSION=${SDK_VERSION:-"6.1"}
+FFMPEG_VERSION=${FFMPEG_VERSION:-"2.0"}
+
+DIST_DIR_BASE=${DIST_DIR_BASE:="$SCRIPT_DIR/dist"}
+
+PATH=$SCRIPT_DIR:$PATH
+
+if [ ! -d ffmpeg ]; then
+    curl -G http://ffmpeg.org/releases/ffmpeg-${FFMPEG_VERSION}.tar.bz2 > ffmpeg-${FFMPEG_VERSION}.tar.bz2
+
+    if [ -f ffmpeg-${FFMPEG_VERSION}.tar.bz2 ]; then
+       tar xjf ffmpeg-${FFMPEG_VERSION}.tar.bz2
+       if [ ! -d ffmpeg-${FFMPEG_VERSION} ]; then
+           echo "ffmpeg snapshot could not be extracted"
+           exit -1
+       else
+           mv ffmpeg-${FFMPEG_VERSION} ffmpeg
+#           patch -p0 -i inverse.patch
+       fi
+    else
+        echo "ffmpeg snapshot could not be downloaded"
+        exit -1
+    fi
+fi
+
+for ARCH in $ARCHS
+do
+    case $ARCH in
+        x86_64 )
+            CC="/usr/bin/gcc"
+            AS="$CC"
+            SYSROOT="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk"
+            ;;
+        i386 )
+            CC="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc"
+            AS="$CC"
+            SYSROOT="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator$SDK_VERSION.sdk"
+            ;;
+        armv7 )
+            CC="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc"
+            AS="$CC"
+            SYSROOT="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS$SDK_VERSION.sdk"
+            ;;
+        armv7s )
+            CC="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc"
+            AS="$CC"
+            SYSROOT="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS$SDK_VERSION.sdk"
+            ;;
+    esac
+
+    FFMPEG_DIR=ffmpeg-$ARCH
+    rm -rf $FFMPEG_DIR
+    cp -a ffmpeg $FFMPEG_DIR
+
+    cd $FFMPEG_DIR
+
+    DIST_DIR=$DIST_DIR_BASE-$ARCH
+    mkdir -p $DIST_DIR
+
+    # Use this to set your own configure-options
+    if [ -f $SCRIPT_DIR/ffmpeg-conf ]
+    then
+        . $SCRIPT_DIR/ffmpeg-conf
+    fi
+
+    # Add x264 if exists
+    if [ -f "$DIST_DIR/lib/libx264.a" ]; then
+        CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-libx264"
+    fi
+
+    # Add xvid if exists
+    if [ -f "$DIST_DIR/lib/libxvid.a" ]; then
+        CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-libxvid"
+    fi
+
+    # Add vorbis if exists
+    if [ -f "$DIST_DIR/lib/libvorbis.a" ]; then
+        CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-libvorbis"
+    fi
+
+    # Add vpx if exists
+    if [ -f "$DIST_DIR/lib/libvpx.a" ]; then
+        CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-libvpx"
+    fi
+
+    # Add lame if exists
+    if [ -f "$DIST_DIR/lib/libmp3lame.a" ]; then
+        CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-libmp3lame"
+    fi
+
+    # Add speex if exists
+    if [ -f "$DIST_DIR/lib/libspeex.a" ]; then
+        CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-libspeex"
+    fi
+
+    # Add rtmp if exists
+    if [ -f "$DIST_DIR/lib/librtmp.a" ]; then
+        CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-librtmp"
+    fi
+
+
+    # Use this to set your own build paths
+    if [ -f $SCRIPT_DIR/build-local ]
+    then
+        . $SCRIPT_DIR/build-local
+    fi
+
+    CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --extra-ldflags=-L$DIST_DIR/lib --extra-cflags=-I$DIST_DIR/include"
+
+    case $ARCH in
+        x86_64  )
+            CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-asm"
+            EXTRA_FLAGS="--enable-cross-compile --enable-pic --target-os=darwin --arch=x86_64 --cpu=x86_64"
+            EXTRA_CFLAGS="-arch x86_64"
+            EXTRA_LDFLAGS="-arch x86_64 -isysroot $SYSROOT"
+            ;;
+        armv7 )
+            EXTRA_FLAGS="--enable-cross-compile --enable-pic --target-os=darwin --arch=arm --cpu=cortex-a8"
+            EXTRA_CFLAGS="-arch $ARCH -mfpu=neon -miphoneos-version-min=${SDK_MIN_VERSION}"
+            EXTRA_LDFLAGS="-arch $ARCH -isysroot $SYSROOT -miphoneos-version-min=${SDK_MIN_VERSION}"
+            ;;
+        armv7s )
+            EXTRA_FLAGS="--enable-cross-compile --enable-pic --target-os=darwin --arch=arm --cpu=cortex-a9"
+            EXTRA_CFLAGS="-arch $ARCH -mfpu=neon -miphoneos-version-min=${SDK_MIN_VERSION}"
+            EXTRA_LDFLAGS="-arch $ARCH -isysroot $SYSROOT -miphoneos-version-min=${SDK_MIN_VERSION}"
+            ;;
+        i386  )
+            CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-asm"
+            EXTRA_FLAGS="--enable-cross-compile --enable-pic --target-os=darwin --arch=i386 --cpu=i386"
+            EXTRA_CFLAGS="-arch i386"
+            EXTRA_LDFLAGS="-arch i386 -isysroot $SYSROOT"
+            ;;
+    esac
+
+    echo "Configure options: $CONFIGURE_OPTIONS"
+
+    echo "Configuring ffmpeg for $ARCH..."
+    ./configure --cc="$CC" --as="gas-preprocessor.pl $AS" --nm="$NM" --sysroot=$SYSROOT $EXTRA_FLAGS --extra-ldflags="$EXTRA_LDFLAGS" --extra-cflags="$EXTRA_CFLAGS" --prefix=$DIST_DIR $CONFIGURE_OPTIONS
+
+#    perl -pi -e 's/HAVE_INLINE_ASM 1/HAVE_INLINE_ASM 0/' config.h
+
+    echo "Installing ffmpeg for $ARCH..."
+    make && make install
+
+    cd $SCRIPT_DIR
+
+    rm -rf $DIST_DIR/bin
+    rm -rf $DIST_DIR/share
+done

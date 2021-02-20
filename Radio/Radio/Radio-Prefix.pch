@@ -1,0 +1,25 @@
+//
+// Prefix header for all source files of the 'Radio' target in the 'Radio' project
+//
+
+#define MR_ENABLE_ACTIVE_RECORD_LOGGING 1
+#define MR_SHORTHAND
+
+#ifdef __OBJC__
+
+#import <Cocoa/Cocoa.h>
+#import "RadioConstants.h"
+#import "RadioAppDelegate.h"
+#import "RadioUtils.h"
+#endif
+
+#define GetAppDelegate() (RadioAppDelegate *)[NSApp delegate]
+
+#ifdef DEBUG
+#define DLog(...) NSLog(@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__])
+#else
+#define DLog(...) do { } while (0)
+#ifndef NS_BLOCK_ASSERTIONS
+#define NS_BLOCK_ASSERTIONS
+#endif
+#endif

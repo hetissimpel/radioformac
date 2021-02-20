@@ -1,0 +1,89 @@
+#!/bin/sh
+
+# These some are example configure options for creating a minimal ffmpeg library
+
+# Reset the config options
+CONFIGURE_OPTIONS=""
+
+# Break the LGPL
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-gpl"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-nonfree"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-postproc"
+
+# Enable the features we need
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-swscale"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-avfilter"
+
+# Setup the decoders
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-decoders"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-decoder=wmapro"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-decoder=wmav1"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-decoder=wmav2"
+
+# Setup the encoders
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-encoders"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-encoder=rawvideo"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-encoder=flv"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-encoder=mpeg4"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-encoder=libvpx"
+
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-encoder=pcm_mulaw"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-encoder=pcm_s16le"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-encoder=libmp3lame"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-encoder=libspeex"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-encoder=libvorbis"
+
+# No HW Acceleration on the iPhone
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-hwaccels"
+
+# Configure the muxers
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-muxers"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-muxer=rawvideo"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-muxer=ffm"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-muxer=swf"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-muxer=flv"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-muxer=avi"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-muxer=h264"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-muxer=mp4"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-muxer=ogg"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-muxer=m4v"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-muxer=mpegts"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-muxer=rtp"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-muxer=rtsp"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-muxer=webm"
+
+# Don't need any demuxers
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-demuxers"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-demuxer=asf"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-demuxer=rtp"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-demuxer=rtsp"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-demuxer=xwma"
+
+# Enable the parsers
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-parsers"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-parser=aac"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-parser=h264"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-parser=mpeg4video"
+#CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-parser=vc1"
+
+# Turn on the protocols we need
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-protocols"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-protocol=http"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-protocol=tcp"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-protocol=mmsh"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-protocol=mmst"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --enable-protocol=rtp"
+
+# Other bits we don't need
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-bsfs"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-indevs"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-outdevs"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-filters"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-avdevice"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-debug"
+
+# Turn off the binaries
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-ffmpeg"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-ffplay"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-ffprobe"
+CONFIGURE_OPTIONS="$CONFIGURE_OPTIONS --disable-ffserver"

@@ -1,0 +1,15 @@
+<dictionary xmlns:xi="http://www.w3.org/2003/XInclude">
+    <suite name="Radio Commands" code="SVrb" description="Radio Commands">
+        <command name="do toggleplay command" code="SVrbPlay" description="Toggle radio playing">
+            <cocoa class="RadioScriptPlayCommand"/>
+        </command>
+        
+        <!-- <command name="do next command" code="SVrbNext" description="Move to next favourite channel">
+            <cocoa class="RadioScriptNextCommand"/>
+        </command>
+        
+        <command name="do previous command" code="SVrbPrev" description="Move to previous favourite channel">
+            <cocoa class="RadioScriptPreviousCommand"/>
+        </command>-->   
+    </suite>
+</dictionary>
