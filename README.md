@@ -30,7 +30,7 @@ This application relies on FFmpeg library and build scripts are included.
 # Contributors
 
 * **Development:** [Damien Glancy](https://github.com/dglancy)
-* **Design/UI:** [Jeroen Herm kens](https://github.com/JeroenHermkens)
+* **Design/UI:** [Jeroen Hermkens](https://github.com/JeroenHermkens)
 * **Website:** [Remco Kalf](https://github.com/remcokalf)
 * **RadioTunes SDK:** [Kemal Taskin](https://github.com/kemaltaskin)
 
