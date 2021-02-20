@@ -3,7 +3,7 @@
 Listen, record and export your favourite radio stations.
 All from your menu bar!
 
-![Radio for mac](https://github.com/hetissimpel/radioformac/supporting-images/website-screenshot.png)
+![Radio for mac](https://github.com/hetissimpel/radioformac/blob/main/supporting-images/website-screenshot.png)
 
 # What is this?
 
