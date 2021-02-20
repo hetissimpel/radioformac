@@ -21,7 +21,7 @@ The purpose of this code is to wrap the FFMpeg open source library and present i
 
 The original library was for iOS and he version presented here and embedded in the app has been changed to target the slightly different macOS audio subsystem requirements.
 
-This was created by a no defunct company called Yakamoz Labs and its author [Kemal Taskin](https://github.com/kemaltaskin) has kindly approved the release of this library as part of the overall app.
+This was created by a now defunct company called Yakamoz Labs and its author [Kemal Taskin](https://github.com/kemaltaskin) has kindly approved the release of this library as part of the overall app.
 
 # FFmpeg
 
