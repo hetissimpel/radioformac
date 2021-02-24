@@ -14,6 +14,9 @@ We are releasing this codebase as open-source under the MIT license. It represen
 This is presented as a historical artifact. The codebase is not an example of how to write a modern macOS app. It has no tests. It was never written with general consumption in mind.
 
 No support is given due to its historical nature including getting the app to compile with modern compilers and versions of XCode.
+
+The version presented here worked perfectly on macOS 10.15. Changes in App Store guidlines prevented it from being uploaded as it is currently architected. Recordings needed saved to the applications own local storage and not be available in the general "Music" folder where we saved recordings.
+
 # Radio Core
 
 A key part of the codebase is a section we internally called "Radio Core". This was a forked version of a commercially sold license called "RadioTunes SDK". 
