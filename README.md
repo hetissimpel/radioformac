@@ -37,6 +37,10 @@ This application relies on FFmpeg library and build scripts are included.
 * **Website:** [Remco Kalf](https://github.com/remcokalf)
 * **RadioTunes SDK:** [Kemal Taskin](https://github.com/kemaltaskin)
 
+# Swift Edition
+
+There is an unfinished rewrite of this product in Swift at (Radio - Swift Edition)[https://github.com/hetissimpel/radioformac-swift]
+
 # License
 
 This code is released under the MIT License. See LICENSE file for more details. 
